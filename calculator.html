@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./calculator.css" type="text/css">
+  <title>calculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <h3>Calculator (ms-100)</h3>
+    </br>
+    <input type="text" id="result" readonly>
+     </br>
+    <input type="button" value="7" onclick="appendNumber('7')">
+    <input type="button" value="8" onclick="appendNumber('8')">
+    <input type="button" value="9" onclick="appendNumber('9')">
+    <input type="button" value="+" onclick="appendNumber('+')">
+    </br>
+    <input type="button" value="4" onclick="appendNumber('4')">
+    <input type="button" value="5" onclick="appendNumber('5')">
+    <input type="button" value="6" onclick="appendNumber('6')">
+    <input type="button" value="-" onclick="appendOparator('-')">
+     </br>
+    <input type="button" value="1" onclick="appendNumber('1')">
+    <input type="button" value="2" onclick="appendNumber('2')">
+    <input type="button" value="3" onclick="appendNumber('3')">
+    <input type="button" value="*" onclick="appendOparator('*')">
+     </br>
+    <input type="button" value="0" onclick="appendNumber('0')">
+    <input type="button" value="00" onclick="appendNumber('00')">
+    <input type="button" value="." onclick="appendOparator('.')">
+    <input type="button" value="/" onclick="appendOparator('/')">
+  </br>
+  <input type="button" value="=" onclick="calculate('=')">
+  <input type="button" value="c" id="clear" onclick="resultclear()">
+  <input type="button" value="on" id="onButton" onclick="onCalculator()">
+  <input type="button" value="off" id="offButton" onclick="offCalculator()">
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
